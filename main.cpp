@@ -1,15 +1,8 @@
-#include "engine/Window.h"
+#include "engine/Application.h"
 
-int main(int argc, char* argv[])
+int main()
 {
-    Window window("Pixel Platformer", 800, 600);
-
-    while (window.IsRunning())
-    {
-        window.PollEvents();
-        window.Clear();
-        window.Present();
-    }
-
+    Application app;
+    app.Run();
     return 0;
 }
